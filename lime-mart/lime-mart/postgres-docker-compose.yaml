@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  office-api:
+    image: postgres:12
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_USER: "postgres"
+      POSTGRES_DB: "limemart"
+    ports:
+      - "54155:5432"
